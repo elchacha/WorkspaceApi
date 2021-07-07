@@ -30,7 +30,7 @@ export default class WorkspaceApi {
 
 
 
-    async closeTab() {
+    async closeFocusedTab() {
         const tabInfo = await this.getFocusedTabInfo();
         this.invokeWorkspaceAPI('closeTab', { tabId: tabInfo.tabId });
     }
