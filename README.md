@@ -13,8 +13,8 @@ first : import the module inside your lwc :
 
 then create a method that will use the needed feature like below example :
 ```
-  closeFocusedTab() {
+  closeTab() {
     const myWorkspaceApi = new WorkspaceApi();
-    myWorkspaceApi.closeTab();
+    myWorkspaceApi.closeFocusedTab();
   }
 ```
